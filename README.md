@@ -5,12 +5,11 @@
 
 # NutriClaw
 
-**An AI medical nutrition concierge that reads menu photos and tailors meal recommendations to your specific health profile.**
+**An AI medical nutrition concierge that analyzes restaurant menus and tailors meal recommendations to your specific health profile.**
 
-![platform](https://img.shields.io/badge/platform-Node.js-lightgrey)
-![language](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)
-![ai](https://img.shields.io/badge/AI-ReAct%20Agent-purple)
-![ocr](https://img.shields.io/badge/OCR-Google%20Vision-blue)
+![platform](https://img.shields.io/badge/platform-Slack%20%7C%20OpenClaw-lightgrey)
+![framework](https://img.shields.io/badge/framework-OpenClaw-blue)
+![ai](https://img.shields.io/badge/AI-Anthropic%20Claude-purple)
 ![status](https://img.shields.io/badge/status-active-brightgreen)
 
 </div>
@@ -21,30 +20,25 @@
 
 Dining out with chronic health conditions like Type 2 Diabetes or High Cholesterol is a constant challenge filled with hidden sugars, refined carbohydrates, and saturated fats. Traditional nutrition tracking tools require tedious manual entry and lack clinical context when evaluating complex restaurant menus.
 
-NutriClaw is an AI nutrition agent that uses a ReAct (Reasoning + Acting) execution loop to analyze restaurant menus against user health profiles. It retrieves personalized dietary restrictions, reads paper menu photos via Google Vision OCR, and evaluates candidate dishes against strict clinical rules—delivering actionable, health-focused ordering advice in real time.
+NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-source agent framework. It interfaces with users directly via **Slack** (or any OpenClaw-compatible messaging frontend) and utilizes **Anthropic LLM** (Claude) to evaluate restaurant menus against personal health limits. Whether provided with a photo of a paper menu or a web search for online restaurant menus, NutriClaw extracts dish details and checks them against clinical dietary rules—delivering actionable, health-focused ordering advice in real time.
 
 ## Highlights
 
-- **ReAct Agent Orchestration.** Autonomous multi-step reasoning loop combining tool selection, execution, and contextual decision-making.
-- **Vision OCR Menu Extraction.** Converts photos of paper restaurant menus into structured text using computer vision.
-- **Clinical Rule Engine.** Strict evaluation protocols enforcing glycemic index rules for Type 2 Diabetes and saturated fat limits for High Cholesterol.
+- **Multi-Source Menu Intelligence.** Analyzes physical paper menu photos via Vision OCR *and* searches the web in real time to fetch online restaurant menus.
+- **OpenClaw Agent Architecture.** Built on the open-source OpenClaw agent foundation, supporting modular messaging channels and flexible LLM backends.
+- **Slack Messaging Interface.** Custom Slack integration providing instant, natural conversational interaction (extendable to Discord, WhatsApp, Telegram, etc.).
+- **Pluggable LLM Backend.** Powered by Anthropic Claude for deep reasoning and prompt safety, with modular support for any LLM provider.
+- **Clinical Rule Engine.** Enforces glycemic index rules for Type 2 Diabetes and saturated fat limits for High Cholesterol.
 - **Structured Actionable Advice.** Outputs three clear categories for every menu: 🟢 **BEST PICK** (safe, high-fiber, lean protein options), 🟡 **MODIFICATION TIP** (actionable waiter requests like sauce on the side), and 🔴 **ITEMS TO AVOID** (high saturated fat or refined carb risks).
-
-## Unique Innovation: Clinical ReAct Execution Loop
-
-Unlike generic chatbots that produce broad, unverified advice, NutriClaw enforces a deterministic two-phase reasoning loop:
-
-1. **Context Retrieval:** Before analyzing a single dish, the agent calls `GetUserHealthProfile` to retrieve the user's specific clinical thresholds (e.g. Type 2 Diabetes & High Cholesterol limits).
-2. **Vision Text Parsing:** Next, the agent executes `ExtractTextFromMenuPhoto` to read physical menu images via Google Vision OCR.
-3. **Clinical Evaluation:** Finally, every dish is benchmarked against medical rules to output structured, prioritized recommendations with explicit medical rationales.
 
 ## Tech Stack
 
 | Layer | Technology |
 |---|---|
-| **Agent Engine** | JavaScript (ES Modules), ReAct Execution Loop |
-| **Vision & AI** | Google Cloud Vision OCR, OpenAI / Gemini Function Schemas |
-| **Tool Architecture** | Functional Tool Registry (`GetUserHealthProfile`, `ExtractTextFromMenuPhoto`) |
+| **Agent Framework** | OpenClaw Open-Source Agent Architecture |
+| **Messaging Frontend** | Slack (Pluggable: Discord, Telegram, WhatsApp) |
+| **LLM Engine** | Anthropic Claude (Pluggable: OpenAI, Gemini, Local LLMs) |
+| **Vision & Web Search** | Computer Vision OCR + Real-Time Web Search |
 
 ## Why the source is private
 
