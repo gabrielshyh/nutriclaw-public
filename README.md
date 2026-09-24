@@ -10,7 +10,7 @@
 ![platform](https://img.shields.io/badge/platform-Slack%20%7C%20OpenClaw-lightgrey)
 ![framework](https://img.shields.io/badge/framework-OpenClaw-blue)
 ![ai](https://img.shields.io/badge/AI-Anthropic%20Claude-purple)
-![status](https://img.shields.io/badge/status-active-brightgreen)
+![status](https://img.shields.io/badge/status-active%20development-yellow)
 
 </div>
 
@@ -24,7 +24,7 @@ NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-sou
 
 ## Highlights
 
-- **Multi-Source Menu Intelligence.** Analyzes physical paper menu photos via vision recognition and searches the web in real time to fetch online restaurant menus.
+- **Multi-Source Menu Intelligence.** Analyzes physical paper menu photos via **Google Cloud Vision (OCR)** *and* searches the web in real time to fetch online restaurant menus.
 - **OpenClaw Agent Architecture.** Built on the open-source OpenClaw agent foundation, supporting modular messaging channels and flexible LLM backends.
 - **Slack Messaging Interface.** Custom Slack integration providing instant, natural conversational interaction (extendable to Discord, WhatsApp, Telegram, etc.).
 - **Pluggable LLM Backend.** Powered by Anthropic Claude for deep reasoning and prompt safety, with modular support for any LLM provider.
@@ -38,7 +38,11 @@ NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-sou
 | **Agent Framework** | OpenClaw Open-Source Agent Architecture |
 | **Messaging Frontend** | Slack (Pluggable: Discord, Telegram, WhatsApp) |
 | **LLM Engine** | Anthropic Claude (Pluggable: OpenAI, Gemini, Local LLMs) |
-| **Vision & Web Search** | Computer Vision + Web Search Capabilities |
+| **Vision & Web Search** | Google Cloud Vision (OCR) + Real-Time Web Search |
+
+## Status
+
+**In active development now, beta version coming soon!**
 
 ## Why the source is private
 
