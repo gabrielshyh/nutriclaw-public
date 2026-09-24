@@ -24,11 +24,11 @@ NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-sou
 
 ## Highlights
 
-- **Multi-Source Menu Intelligence.** Analyzes physical paper menu photos via Vision OCR *and* searches the web in real time to fetch online restaurant menus.
+- **Multi-Source Menu Intelligence.** Analyzes physical paper menu photos via vision recognition and searches the web in real time to fetch online restaurant menus.
 - **OpenClaw Agent Architecture.** Built on the open-source OpenClaw agent foundation, supporting modular messaging channels and flexible LLM backends.
 - **Slack Messaging Interface.** Custom Slack integration providing instant, natural conversational interaction (extendable to Discord, WhatsApp, Telegram, etc.).
 - **Pluggable LLM Backend.** Powered by Anthropic Claude for deep reasoning and prompt safety, with modular support for any LLM provider.
-- **Clinical Rule Engine.** Enforces glycemic index rules for Type 2 Diabetes and saturated fat limits for High Cholesterol.
+- **Clinical Rule Engine.** Enforces dietary guidelines for Type 2 Diabetes and saturated fat limits for High Cholesterol.
 - **Structured Actionable Advice.** Outputs three clear categories for every menu: 🟢 **BEST PICK** (safe, high-fiber, lean protein options), 🟡 **MODIFICATION TIP** (actionable waiter requests like sauce on the side), and 🔴 **ITEMS TO AVOID** (high saturated fat or refined carb risks).
 
 ## Tech Stack
@@ -38,7 +38,7 @@ NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-sou
 | **Agent Framework** | OpenClaw Open-Source Agent Architecture |
 | **Messaging Frontend** | Slack (Pluggable: Discord, Telegram, WhatsApp) |
 | **LLM Engine** | Anthropic Claude (Pluggable: OpenAI, Gemini, Local LLMs) |
-| **Vision & Web Search** | Computer Vision OCR + Real-Time Web Search |
+| **Vision & Web Search** | Computer Vision + Web Search Capabilities |
 
 ## Why the source is private
 
