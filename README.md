@@ -42,7 +42,7 @@ NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-sou
 
 ## Status
 
-**In active development now, beta version coming soon!**
+**In active development now, POC coming soon!**
 
 ## Why the source is private
 
