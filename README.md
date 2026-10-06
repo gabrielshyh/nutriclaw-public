@@ -9,7 +9,7 @@
 
 ![platform](https://img.shields.io/badge/platform-Slack%20%7C%20OpenClaw-lightgrey)
 ![framework](https://img.shields.io/badge/framework-OpenClaw-blue)
-![ai](https://img.shields.io/badge/AI-Anthropic%20Claude-purple)
+![ai](https://img.shields.io/badge/AI-OpenAI-green)
 ![status](https://img.shields.io/badge/status-active%20development-yellow)
 
 </div>
@@ -20,14 +20,14 @@
 
 Dining out with chronic health conditions like Type 2 Diabetes or High Cholesterol is a constant challenge filled with hidden sugars, refined carbohydrates, and saturated fats. Traditional nutrition tracking tools require tedious manual entry and lack clinical context when evaluating complex restaurant menus.
 
-NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-source agent framework. It interfaces with users directly via **Slack** (or any OpenClaw-compatible messaging frontend) and utilizes **Anthropic LLM** (Claude) to evaluate restaurant menus against personal health limits. Whether provided with a photo of a paper menu or a web search for online restaurant menus, NutriClaw extracts dish details and checks them against clinical dietary rules—delivering actionable, health-focused ordering advice in real time.
+NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-source agent framework. It interfaces with users directly via **Slack** (or any OpenClaw-compatible messaging frontend) and utilizes **OpenAI** models to evaluate restaurant menus against personal health limits. Whether provided with a photo of a paper menu or a web search for online restaurant menus, NutriClaw extracts dish details and checks them against clinical dietary rules—delivering actionable, health-focused ordering advice in real time.
 
 ## Highlights
 
 - **Multi-Source Menu Intelligence.** Analyzes physical paper menu photos via **Google Cloud Vision (OCR)** *and* searches the web in real time to fetch online restaurant menus.
 - **OpenClaw Agent Architecture.** Built on the open-source OpenClaw agent foundation, supporting modular messaging channels and flexible LLM backends.
 - **Slack Messaging Interface.** Custom Slack integration providing instant, natural conversational interaction (extendable to Discord, WhatsApp, Telegram, etc.).
-- **Pluggable LLM Backend.** Powered by Anthropic Claude for deep reasoning and prompt safety, with modular support for any LLM provider.
+- **Pluggable LLM Backend.** Powered by OpenAI models for menu reasoning and recommendations, with modular support for any LLM provider.
 - **Clinical Rule Engine.** Enforces dietary guidelines for Type 2 Diabetes and saturated fat limits for High Cholesterol.
 - **Structured Actionable Advice.** Outputs three clear categories for every menu: 🟢 **BEST PICK** (safe, high-fiber, lean protein options), 🟡 **MODIFICATION TIP** (actionable waiter requests like sauce on the side), and 🔴 **ITEMS TO AVOID** (high saturated fat or refined carb risks).
 
@@ -37,7 +37,7 @@ NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-sou
 |---|---|
 | **Agent Framework** | OpenClaw Open-Source Agent Architecture |
 | **Messaging Frontend** | Slack (Pluggable: Discord, Telegram, WhatsApp) |
-| **LLM Engine** | Anthropic Claude (Pluggable: OpenAI, Gemini, Local LLMs) |
+| **LLM Engine** | OpenAI (Pluggable: Gemini, Local LLMs) |
 | **Vision & Web Search** | Google Cloud Vision (OCR) + Real-Time Web Search |
 
 ## Status
