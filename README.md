@@ -18,7 +18,7 @@
 
 ## What it does
 
-Dining out with chronic health conditions like Type 2 Diabetes or High Cholesterol is a constant challenge filled with hidden sugars, refined carbohydrates, and saturated fats. Traditional nutrition tracking tools require tedious manual entry and lack clinical context when evaluating complex restaurant menus.
+Eating well at restaurants is hard for anyone who cares about their nutrition and health. Menus rarely show what's actually in a dish, like hidden sugars, refined carbohydrates, or saturated fats, which makes it difficult to order in line with your goals. That holds whether you're managing a condition like Type 2 Diabetes or High Cholesterol, working toward a fitness goal, or simply trying to eat healthier. Traditional nutrition tracking tools require tedious manual entry and offer little help when you're facing a complex restaurant menu.
 
 NutriClaw is an AI nutrition concierge built on top of the **OpenClaw** open-source agent framework. It interfaces with users directly via **Slack** (or any OpenClaw-compatible messaging frontend) and utilizes **OpenAI** models to evaluate restaurant menus against personal health limits. Whether provided with a photo of a paper menu or a web search for online restaurant menus, NutriClaw extracts dish details and checks them against clinical dietary rules—delivering actionable, health-focused ordering advice in real time.
 
